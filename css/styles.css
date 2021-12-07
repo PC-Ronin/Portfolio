@@ -1,0 +1,130 @@
+/*
+Color Pallet: #212121 #30475E #6D9886 #D9CAB3 #F2A365 #F6F6F6 #ECECEC
+*/
+
+body {
+  background-color: #30475E;
+  color: #F6F6F6;
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 50px auto 0 auto;
+  font-family: 'Finger Paint', cursive;
+}
+
+h2 {
+  padding: 2px;
+}
+
+hr {
+  border-style: dotted;
+  border-color: #D9CAB3;
+  border-width: 15px;
+	border-bottom: none;
+	width: 25%;
+  margin: 100px auto;
+}
+
+a {
+  font-weight: bold;
+  color:  #212121;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F2A365;
+}
+
+.comp-img {
+  width: 30%;
+  float: left;
+  margin-right: 30px;
+  /*border-radius: 50%;*/
+}
+
+.cooking-img {
+  width: 30%;
+  float: right;
+  margin-left: 30px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.subtitle {
+  font-size: 2rem;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+  line-height: 2;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px auto;
+}
+
+.contact-me {
+  margin: 100px auto;
+}
+
+.top-container {
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-contrainer {
+  margin: 100px 0;
+}
+
+.bottom-container {
+  background-color: #6D9886;
+  padding: 50px 0 20px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 225px;
+  top: 50px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 225px;
+  bottom: 300px;
+}
+
+.btn {
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #212121;
+  font-size: 20px;
+  background: #6D9886;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #F2A365;
+  text-decoration: none;
+  color: #212121;
+}
+
+.copyright {
+  color: #212121;
+  font-size: 0.75em;
+  padding: 20px 0;
+}
