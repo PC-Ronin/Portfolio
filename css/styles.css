@@ -40,15 +40,31 @@ a:hover {
   color: #F2A365;
 }
 
+iframe {
+  width: 85%;
+  height: 920px;
+}
+
 .comp-img {
-  width: 30%;
+  width: 25%;
   float: left;
   margin-right: 30px;
-  /*border-radius: 50%;*/
+}
+
+.pc-tower-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.gaming-pc-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
 }
 
 .cooking-img {
-  width: 30%;
+  width: 25%;
   float: right;
   margin-left: 30px;
 }
