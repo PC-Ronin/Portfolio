@@ -17,7 +17,9 @@ h1 {
 }
 
 h2 {
+  font-size: 2.5rem;
   padding: 2px;
+  font-family: 'Finger Paint', cursive;
 }
 
 hr {
@@ -41,8 +43,23 @@ a:hover {
 }
 
 iframe {
-  width: 85%;
+  width: 95%;
   height: 920px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup {
+  position: relative;
+}
+
+.popup .close {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
 }
 
 .comp-img {
@@ -70,7 +87,7 @@ iframe {
 }
 
 .skill-row {
-  width: 50%;
+  width: 65%;
   margin: 100px auto 100px auto;
   text-align: left;
   line-height: 2;
@@ -80,10 +97,21 @@ iframe {
   font-size: 2rem;
 }
 
+.avatar {
+  margin-top: 25px;
+}
+
+.avatar img {
+  width: 45%;
+  max-width: 45% !important;
+  height: auto;
+}
+
 .intro {
-  width: 30%;
+  width: 65%;
   margin: auto;
   line-height: 2;
+  text-align: left;
 }
 
 .contact-message {
@@ -97,28 +125,16 @@ iframe {
 
 .top-container {
   position: relative;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
-.middle-contrainer {
-  margin: 100px 0;
+.middle-container {
+  size: 100%;
 }
 
 .bottom-container {
   background-color: #6D9886;
   padding: 50px 0 20px;
-}
-
-.top-cloud {
-  position: absolute;
-  right: 225px;
-  top: 50px;
-}
-
-.bottom-cloud {
-  position: absolute;
-  left: 225px;
-  bottom: 300px;
 }
 
 .btn {

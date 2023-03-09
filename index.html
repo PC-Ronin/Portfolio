@@ -12,24 +12,30 @@
 
   <body>
     <div class="top-container">
-      <img src="images/cloud.png" alt="cloud-img" class="top-cloud" />
       <h1>I'm Russell.</h1>
       <p class="subtitle">a web developer <br /> and game designer.</p>
-      <img src="images/cloud.png" alt="cloud-img"  class="bottom-cloud" />
-      <img src="images/mountain.png" alt="moutain-img" class="moutain" />
+      <img class="avatar" src="images/avatar.png" alt="profile-avatar">
     </div> <!-- End Top Container -->
 
     <br />
-    <br />
     <hr />
-    <br />
     <br />
 
     <div class="middle-container">
       <div class="profile">
-        <img class="" src="images/avatar.png" alt="profile-avatar">
         <h2>Hello.</h2>
-        <p class="intro">My name Russell. I am a Web Developer, a Game Designer, and Business Enthusiast, and, most importantly, a family man to three kids and a lovely wife.</p>
+        <p class="intro">
+          I am an experienced IT Generalist with over 5 years of hands-on experience in computer repair troubleshooting, building high-end desktops, system administration, application support, technology installation, and more.
+          <br />
+          <br />
+          Currently, I am working towards a Bachelor’s degree in Information Technology with a concentration on Web Development. Additionally, I am taking a few courses on the side to expand my knowledge of Python programming and Game Development.
+          <br />
+          <br />
+          Gaming is a lifelong passion of mine. I stumbled into computer repair when I tried upgrading my personal office desktop into a gaming desktop. Unfortunately, I found out the hard way that the existing components could not handle the added stress and it overloaded the motherboard. After reading several tutorials on how to troubleshoot, fix, and build a gaming desktop, I was able to rebuild the computer from scratch. When the lights came on, and a machine I had built myself booted up without issues, I was overjoyed and instantly hooked on learning more about technology.
+          <br />
+          <br />
+          This experience led me to pursue a career in information technology.
+        </p>
       </div>
 
       <br />
@@ -50,6 +56,43 @@
           <h3>PC Repair & Diagnostics</h3>
           <p>I got my start building, repairing, and tuning computers. After I built my first Gaming PC, I was hooked. I wanted to learn everything I could about computer diagnostics and system maintenance.
             After hours of study, I was able to pass the CompTIA A+ exam and got my first certification. Soon after, I was hired as an onsite support technician.</p>
+        </div>
+      </div>
+
+      <br />
+      <hr />
+      <br />
+
+      <div>
+        <div class="popup">
+          <iframe src="" frameborder="0" allowfullscreen></iframe>
+          <a href="#" class="btn close">Close</a>
+        </div>
+      </div>
+
+
+      <h2>My Projects.</h2>
+      <div class="links">
+        <h3>- Python -</h3>
+        <br />
+        <div class="">
+          <a class="btn btn-primary openpop" href="https://replit.com/@PC-Ronin/Turtle-Race?embed=true">Turtle-Race</a>
+          <a class="btn btn-primary openpop" href="https://replit.com/@PC-Ronin/Etch-A-Sketch?embed=true">Etch-A-Sketch</a>
+          <a class="btn btn-primary openpop" href="https://replit.com/@PC-Ronin/Hangman?embed=true">Hangman</a>
+          <a class="btn btn-primary openpop" href="https://replit.com/@PC-Ronin/blackjack?embed=true">Blackjack</a>
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <div class="links">
+        <h3>- Websites -</h3>
+        <br />
+        <div>
+          <a class="btn btn-primary openpop" href="https://www.roninpcpro.com/">Ronin PC Pro</a>
+          <a class="btn btn-primary openpop" href="https://webdav.mga.edu/Russell.Dennis/TechGuides/">Tech Guides</a>
+          <a class="btn btn-primary openpop" href="https://webdav.mga.edu/Russell.Dennis/Roninpcpro/">Ronin PC Pro (Legacy)</a>
         </div>
       </div>
 
@@ -88,10 +131,28 @@
 
     <div class="bottom-container">
       <a class="footer-link" href="https://www.linkedin.com/in/russell-dennis/">LinkedIn</a>
-      <a class="footer-link" href="RussellDennis.Resume.pdf" target="_blank">Resume</a>
-      <a class="footer-link" href="projects.html">Projects</a>
+      <a class="footer-link" href="Russell.Dennis_Resume.pdf" target="_blank">Resume</a>
       <p class="copyright">© Russell Dennis.</p>
     </div> <!-- End Bottom Container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".popup").hide();
+        $(".openpop").click(function (e) {
+            e.preventDefault();
+            $("iframe").attr("src", $(this).attr('href'));
+            $(".links").fadeOut('slow');
+            $(".popup").fadeIn('slow');
+        });
+
+        $(".close").click(function () {
+            $(this).parent().fadeOut("slow");
+            $(".links").fadeIn("slow");
+        });
+      });
+    </script>
 
   </body>
 </html>
