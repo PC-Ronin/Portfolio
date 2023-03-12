@@ -160,3 +160,7 @@ iframe {
   font-size: 0.75em;
   padding: 20px 0;
 }
+
+meta[property="og:image"] {
+	content: url(pexels-luis-gomes-546819.jpg);
+}
